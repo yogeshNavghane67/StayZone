@@ -45,6 +45,7 @@ export const validateToken = async () => {
   if (!response.ok) {
     throw new Error("Token invalid");
   }
+
   return response.json();
 };
 
